@@ -1,0 +1,31 @@
+<script id="sap-ui-bootstrap" 
+     type="text/javascript"
+     src="resources/sap-ui-core.js"
+     data-sap-ui-theme="sap_belize"
+     data-sap-ui-libs="sap.m,sap.ndc"
+     data-sap-ui-compatVersion="edge">
+</script>
+
+<script>
+	
+	sap.ui.getCore().attachInit(function(){
+		//Application can be started 
+		
+		var botao1 = new sap.m.Button();
+		window.botao2 = new sap.m.Button();
+		
+		botao1.placeAt("conteudo");
+		botao2.placeAt("conteudo");
+		
+		var botao3 = new sap.ndc.BarcodeScannerButton();
+		botao3.placeAt("conteudo");
+		
+	});
+	
+</script>
+
+<body>
+	<div id="conteudo">
+		
+	</div>
+</body>
